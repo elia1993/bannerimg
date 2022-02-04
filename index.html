@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+
+<title>Banner IMG</title>
+</head>
+<body>
+<form onsubmit="event.preventDefault(); submitForm()">
+	<h4>Add Banner IMG</h4>
+	<input type="text" required value="" placeholder="Banner IMG URL" name="banner_img" />
+	<input type="text" required value="" placeholder="Redirect Link" name="redirect_link" />
+	<input type="submit" name="submit" value="Submit" />
+	<input type="button" onclick="saveToLocalStorage()" name="save" value="Save" />
+	<input type="button" onclick="deleteLocalStorage()" name="delete" value="Delete" />
+</form>
+<div id="banners-list"></div>
+	
+<script src="app.js"></script>
+
+</body>
+</html>
